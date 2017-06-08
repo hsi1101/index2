@@ -324,6 +324,10 @@ nav.sticky {
     color: #fff;
 }
 
+.summary p {
+    text-align: left;
+}
+
 
 /*=About=*/
 
