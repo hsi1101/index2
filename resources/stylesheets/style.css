@@ -124,8 +124,8 @@ nav .nav-toggle {
     display: inline-block;
     float: right;
     font-size: 20px;
-    padding: 20px 0;
-    z-index: 1000
+    padding: 24px 0;
+    z-index: 9;
 }
 
 nav ul {
@@ -134,7 +134,7 @@ nav ul {
     list-style: none;
     margin: 0 -16px;
     padding: 0;
-    z-index: 999;
+    z-index: 9;
 }
 
 nav ul li {
@@ -153,6 +153,7 @@ nav.sticky {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 9;
 }
 
 
@@ -302,59 +303,85 @@ nav.sticky {
     background-color: rgba(255, 255, 255, .25);
 }
 
-.summary .container,
-.about .container,
-.details .container,
-.contact .container {
+#summary .container,
+#about .container,
+#details .container,
+#buy .container,
+#contact .container {
     padding: 80px 0;
 }
 
-.summary,
-.about,
-.details,
-.contact {
+#summary,
+#about,
+#details,
+#buy,
+#contact {
     text-align: center;
 }
 
 
 /*=Summary=*/
 
-.summary {
-    background-color: #424B54;
+#summary {
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/stardust.png");
     color: #fff;
 }
 
-.summary p {
+#summary p {
     text-align: left;
 }
 
 
 /*=About=*/
 
-.about h3 {
+#about h3 {
     font-weight: 300;
 }
 
 
 /*=Details=*/
 
-.details {
+#details {
     background-color: #00a2d4;
     color: #fff;
 }
 
-.details li {
+#details li {
     padding-bottom: 6px;
     text-align: left;
 }
 
-.details li b {
+#details li b {
     font-weight: 500;
     color: #C2EFB3;
 }
 
 
+/*=buy=*/
+
+#buy {
+    background: linear-gradient(135deg, rgba(85, 239, 203, 0.75) 0%, rgba(30, 87, 153, 0.75) 0%, rgba(85, 239, 203, 0.75) 0%, rgba(91, 202, 255, 0.75) 100%), url("../images/background.jpg") no-repeat fixed center;
+    /*background: linear-gradient(135deg, rgba(85, 239, 203, 1) 0%, rgba(30, 87, 153, 1) 0%, rgba(85, 239, 203, 1) 0%, rgba(91, 202, 255, 1) 100%);*/
+    background-size: cover;
+}
+
+#buy .button {
+    font-size: 16px;
+    padding: 10px 26px;
+}
+
+.btn-success {
+    background-color: #00a2d4;
+    border: solid 1px #00a2d4;
+}
+
+.btn-success:hover {
+    background-color: #0190bc;
+}
+
+
 /*=Contact=*/
+
 
 
 /*=Footer=*/
@@ -424,7 +451,7 @@ Media Queries
     .book-image {
         max-width: 350px;
     }
-    .details li {
+    #details li {
         margin: 0 280px;
     }
 }
