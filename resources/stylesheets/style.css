@@ -334,17 +334,17 @@ nav.sticky {
 
 /*=About=*/
 
-#about h3 {
+/*#about h3 {
     font-weight: 300;
-}
+}*/
 
 
 /*=Details=*/
 
-#details {
+/*#details {
     background-color: #00a2d4;
     color: #fff;
-}
+}*/
 
 #details li {
     padding-bottom: 6px;
@@ -353,7 +353,7 @@ nav.sticky {
 
 #details li b {
     font-weight: 500;
-    color: #C2EFB3;
+    color: #00a2d4;
 }
 
 
@@ -370,13 +370,14 @@ nav.sticky {
     padding: 10px 26px;
 }
 
-.btn-success {
+.btn-success,
+.btn-success:visited {
     background-color: #00a2d4;
     border: solid 1px #00a2d4;
 }
 
 .btn-success:hover {
-    background-color: #0190bc;
+    background-color: #0083AB;
 }
 
 
