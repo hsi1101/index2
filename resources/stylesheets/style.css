@@ -65,6 +65,11 @@ a:active {
     text-decoration: underline;
 }
 
+::selection {
+    background: #f5c72d;
+    color: #fff;
+}
+
 
 /*=Containers=*/
 
